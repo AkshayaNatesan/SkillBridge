@@ -1,0 +1,318 @@
+.student-bg {
+  min-height: 100vh;
+  background: url("https://educationunboundsite.wordpress.com/wp-content/uploads/2018/04/bookbirdsb_multi.gif")
+    no-repeat center center fixed;
+  background-size: cover;
+  padding: 30px;
+  font-family: "Inter", sans-serif;
+}
+
+.course-card img {
+  width: 70px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.option {
+  display: block;
+  margin: 6px 0;
+  font-weight: 300;
+}
+
+.btn-row button {
+  margin-right: 10px;
+}
+
+.logout {
+  margin-top: 20px;
+  color: #ff6b6b;
+}
+
+.gemini-btn {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  width: 55px;
+  height: 55px;
+  background: cyan;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 20px cyan;
+}
+
+.gemini-chat {
+  position: fixed;
+  right: 25px;
+  bottom: 90px;
+  width: 300px;
+  padding: 15px;
+}
+
+.chat-body {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.bot {
+  background: rgba(0,0,0,0.4);
+  padding: 6px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+}
+
+.user {
+  background: rgba(0,255,255,0.3);
+  padding: 6px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  text-align: right;
+}
+
+
+/* ================= IMAGE SIZE FIXES ================= */
+
+/* ---- COURSE LOGOS ---- */
+.course-logo {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.4));
+}
+
+/* ---- COURSE CARD ALIGNMENT ---- */
+.course-card {
+  align-items: center;
+  text-align: center;
+}
+/* ===== FIXED CURRENT AFFAIRS SLIDER ===== */
+
+.news-slider {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+}
+
+/* This is the KEY line */
+.news-track {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;   /* 🚨 STOPS BOTTOM DUPLICATION */
+  overflow: hidden;
+}
+
+/* News card */
+.news-card {
+  min-width: 300px;
+  max-width: 300px;
+  padding: 18px;
+}
+
+/* Arrow */
+.news-arrow {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
+
+.news-arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.course-logo {
+  height: 42px;
+  max-width: 120px;
+  object-fit: contain;
+  margin-bottom: 6px;
+  align-self: flex-start;   /* 👈 force left */
+}
+
+/* ===== GEMINI INPUT GLASS EFFECT ===== */
+.gemini-chat input {
+  width: 100%;
+  padding: 14px 16px;
+
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.12);   /* glass */
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+
+  box-shadow:
+    inset 0 0 0 rgba(255,255,255,0),
+    0 8px 20px rgba(0, 0, 0, 0.35);
+
+  transition: all 0.3s ease;
+}
+
+/* Placeholder */
+.gemini-chat input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+}
+
+/* Focus glow */
+.gemini-chat input:focus {
+  border: 1px solid rgba(0, 255, 255, 0.6);
+  box-shadow:
+    0 0 12px rgba(0, 255, 255, 0.6),
+    0 8px 25px rgba(0, 0, 0, 0.45);
+}
+/* ===== GEMINI INPUT TEXT COLOR FIX ===== */
+.gemini-chat input {
+  color: #000000;          /* typed text = black */
+  caret-color: #000000;   /* blinking cursor black */
+}
+
+/* Placeholder stays soft */
+.gemini-chat input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 300;
+}
+
+/* Focus glow (unchanged) */
+.gemini-chat input:focus {
+  border: 1px solid rgba(0, 255, 255, 0.6);
+  box-shadow:
+    0 0 12px rgba(0, 255, 255, 0.6),
+    0 8px 25px rgba(0, 0, 0, 0.45);
+}
+/* ===== HARD OVERRIDE: CURRENT AFFAIRS TEXT ===== */
+
+.news-card * {
+  font-family: "Inter", "Roboto", "Segoe UI", sans-serif !important;
+  font-weight: 300 !important;
+  line-height: 1.6 !important;
+}
+
+/* Titles */
+.news-card h3,
+.news-card h2 {
+  font-size: 15px !important;
+  font-weight: 300 !important;
+}
+
+/* Description text (this is your long paragraph) */
+.news-card p {
+  font-size: 13.5px !important;
+  opacity: 0.85 !important;
+}
+
+/* Date text (Dec 2025) */
+.news-card span {
+  font-size: 11.5px !important;
+  opacity: 0.6 !important;
+}
+
+
+/* ===== CURRENT AFFAIRS SLIDER (2 CARDS) ===== */
+
+.news-title {
+  margin-top: 30px;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+/* Wrapper */
+.news-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Track */
+.news-track {
+  display: flex;
+  gap: 18px;
+  overflow: hidden;
+}
+
+/* Card */
+.news-card {
+  width: 280px;
+  padding: 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 0 16px rgba(0, 255, 255, 0.35),
+    0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Arrow buttons */
+.news-arrow {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.news-arrow:hover:not(:disabled) {
+  background: rgba(0, 255, 255, 0.35);
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.6);
+}
+
+.news-arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Text */
+.news-company {
+  font-size: 12px;
+  opacity: 0.6;
+  font-weight: 300;
+}
+
+.news-head {
+  font-size: 15px;
+  margin: 8px 0;
+  font-weight: 400;
+}
+
+.news-desc {
+  font-size: 13.5px;
+  opacity: 0.85;
+}
+
+.news-date {
+  font-size: 11.5px;
+  opacity: 0.55;
+}
+.course-card h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #e9feff;
+  margin: 0;
+  line-height: 1.4;
+}
+.course-card h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #e9feff;
+  margin: 0;
+  line-height: 1.4;
+}

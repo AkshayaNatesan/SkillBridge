@@ -1,0 +1,74 @@
+/* Fullscreen GIF background with zoom animation */
+.landing-bg {
+  height: 100vh;
+  width: 100%;
+  background: url("https://i.pinimg.com/originals/ad/a1/46/ada1469472d4f529482c7fb0190644ec.gif")
+    no-repeat center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: zoomBg 18s ease-in-out infinite alternate;
+}
+
+/* Zoom in & out animation */
+@keyframes zoomBg {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 115%;
+  }
+}
+
+/* Glassmorphism card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 24px;
+  padding: 45px 60px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* Vertical button layout */
+.btn-vertical {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Common button style */
+.btn {
+  padding: 14px 34px;
+  font-size: 17px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect */
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Individual colors */
+.btn.student {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.btn.college {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.btn.company {
+  background: linear-gradient(135deg, #a855f7, #7e22ce);
+}
+p,h1{
+    color: black; 
+}

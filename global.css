@@ -1,0 +1,32 @@
+
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#0f172a;
+  color:white;
+  text-align:center;
+}
+button{
+  padding:12px 25px;
+  border:none;
+  border-radius:20px;
+  cursor:pointer;
+}
+.landing, .login, .dashboard{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.dashboard ul{
+  list-style:none;
+  padding:0;
+}
+.dashboard li{
+  background:#1f2937;
+  margin:8px;
+  padding:12px;
+  border-radius:10px;
+  width:260px;
+}
