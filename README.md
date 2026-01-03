@@ -2,7 +2,7 @@
 
 College – Student – Company Placement Platform
 
-SkillBridge is a B2B & B2C placement platform that bridges the gap between colleges, students, and companies by enabling verified skill-based hiring instead of traditional CGPA-based recruitment.
+SkillBridge is a B2B placement platform that bridges the gap between colleges, students, and companies by enabling verified skill-based hiring instead of traditional CGPA-based recruitment.
 
 📌 Problem Statement
 
